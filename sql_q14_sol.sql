@@ -2,7 +2,7 @@ WITH penalties AS (SELECT match_no
 		   FROM euro_cup_2016.player_booked)
 
 SELECT DISTINCT referees.referee_name,
-       COUNT(penalties.match_no) OVER(PARTITION BY matches.referee_id) AS total_bookings_issued
+       		COUNT(penalties.match_no) OVER(PARTITION BY matches.referee_id) AS total_bookings_issued
 FROM penalties
 
 INNER JOIN euro_cup_2016.match_mast AS matches ON penalties.match_no = matches.match_no
