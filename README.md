@@ -1,6 +1,8 @@
 # Euro-Cup-Data-Analysis
 This repository takes a look at SQL queries on EuroCup's 2016 data
 
+# Questions
+
 1. Write a SQL query to find the date EURO Cup 2016 started on.
 2. Write a SQL query to find the number of matches that were won by penalty shootout.
 3. Write a SQL query to find the match number, date, and score for matches in which no
